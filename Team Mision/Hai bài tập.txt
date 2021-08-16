@@ -1,0 +1,31 @@
+1. Tổng quan
+- Load tín hiệu tiếng nói
+	+ 4 file ở hai môi trường khác nhau
+	+ môi trường lab nhiều background nhiễu hơn ở studio
+
+
+2. Hai loại bài tập:
+
+- Loại 1: Phân đoạn tín hiệu (đánh dấu điểm đầu điểm cuối của một đoạn không có tiếng nói)
+	+ Dựa trên đặc trưng gì để phân đoạn (xử lý tín hiệu)
+		Dựa trên đặc trưng về công suất/năng lượng cường độ (biên độ của tín hiệu) dễ hơn đặc trưng về tần số
+		dùng wave sufer để thể hiện để xem kết quả
+		boundary detect
+		phụ thuộc vào môi trường thu âm
+	+ nhẹ đi: Nhân dạng (học sâu, học máy, mạng neural)		
+
+- Loại 2: Tìm tần số cơ bản của tín hiệu (phản ánh cao độ của giọng nói)
+	+ Dựa vào đậc trưng tuần hoàn hay không tuần hoàn: tín hiệu tuần hoàn mới có tần số cơ bản, nghịch đảo của tần số của tín hiệu
+	+ nhờ đó biết được, dấu của người nói, phân biệt người nói,...
+
+3. Hướng dẫn
+
+- Lúc test file thì khác nhau: kết quả càng tôt thì càng cao.
+- Chia thành các khung ngắn, chứa âm thanh, tìm các đặc trưng của âm đó (xử lý ngắn hạn) có độ dài khoảng 20ms, 
+	+ các khung này liên tiếp, chồng lên nhau (kiểu gối đầu?) 10ms
+	+ Biến đổi của đặc trung của mỗi khung sẽ trơn tru hơn, tìm có thể chính xác hơn,
+
+
+a) Phân đoạn tín hiệu thành đoạn tiếng nói và khoảng lặng dựa trên đặc trưng năng lượng
+
+
